@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // x = prompt("enter your amount");
+        // switch (true) {
+        //     case (x<5000):
+        //         document.write("you didnot buy anything")
+        //         break;
+        //     case (x>=5000 && x<=10000):
+        //         document.write("you buy basic model phone")
+        //         break;
+        //     case (x>10000 && x<=20000):
+        //         document.write("you buy android phone")
+        //         break;
+        //     case (x>20000 && x<=50000):
+        //         document.write("you buy apple iphone")
+        //         break;
+        //     default:
+        //         document.write("you have too much of money")
+        // }
+        x= prompt("enter your age")
+        // 1 ticket = y
+        y=500 
+        if(x<=12||x>60){
+            document.write("your ticket is free" );
+        }
+        else if (x>12 && x<=20){
+            document.write("you have 20% offer");
+            document.write("your ticket is $"+(y-(y*.2)) );
+        }
+        else if(x>20 && x<=40){
+            document.write("you have 5% offer");
+            document.write("your ticket is $"+(y-(y*.05)) );
+        }
+        else if(x>40 && x<=60){
+            document.write("you have 10% offer");
+            document.write("your ticket is $"+ (y-(y*.1)) );
+        }
+
+    </script>
+</body>
+
+</html>

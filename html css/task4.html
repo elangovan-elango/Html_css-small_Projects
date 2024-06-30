@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div  style="margin-left: 400px; padding: 20px;">
+    <p>1.Capital of Tamilnadu?</p>
+    <input type="radio" name="r1">Trichy
+    <input type="radio" name="r1">Maurai
+    <input type="radio" name="r1" id="ans1">Chennai
+    <input type="radio" name="r1">CBE
+    <p>2.Monchester of Tamilnadu?</p>
+    <input type="radio" name="r2">Trichy
+    <input type="radio" name="r2">Maurai
+    <input type="radio" name="r2">Chennai
+    <input type="radio" name="r2" id="ans2">CBE
+    <p>3. Queens of hills in  Tamilnadu?</p>
+    <input type="radio" name="r3" id="ans3">Ooty
+    <input type="radio" name="r3">Yercaud
+    <input type="radio" name="r3">Kodaikanal
+    <input type="radio" name="r3">CBE
+    <p>4.Princess of Hills in Tamilnadu?</p>
+    <input type="radio" name="r4">Madurai
+    <input type="radio" name="r4">Ooty
+    <input type="radio" name="r4" id="ans4">Kodaikanal
+    <input type="radio" name="r4">CBE
+    <p>5.Temple city of  Tamilnadu?</p>
+    <input type="radio" name="r5">Madurai
+    <input type="radio" name="r5">Mahapali puram
+    <input type="radio" name="r5" id="ans5">Kanchipuram
+    <input type="radio" name="r5">Rameshwaram <br><br>
+    <button onclick="result()" style=" padding:  10px 20px; margin:50px;" >SUBMIT</button></div>
+<script>
+       function result()
+       {
+        var score=0;
+            if(document.getElementById("ans1").checked)
+        {
+            score++;
+        }
+        if(document.getElementById("ans2").checked){
+            score++;
+        }
+        if(document.getElementById("ans3").checked){
+            score++;
+        }
+        if(document.getElementById("ans4").checked){
+            score++;
+        }
+        if(document.getElementById("ans5").checked){
+            score++;
+        }
+        alert("Your Score is:"+score);    
+       }    
+</script>
+
+    
+</body>
+</html>
